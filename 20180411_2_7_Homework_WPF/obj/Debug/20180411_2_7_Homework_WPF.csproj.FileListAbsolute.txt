@@ -1,0 +1,15 @@
+C:\Users\mmr\Documents\Visual Studio 2017\201801_Winter\20180411_2_7_Homework_WPF\20180411_2_7_Homework_WPF\obj\Debug\20180411_2_7_Homework_WPF.csprojResolveAssemblyReference.cache
+C:\Users\mmr\Documents\Visual Studio 2017\201801_Winter\20180411_2_7_Homework_WPF\20180411_2_7_Homework_WPF\obj\Debug\MainWindow.g.cs
+C:\Users\mmr\Documents\Visual Studio 2017\201801_Winter\20180411_2_7_Homework_WPF\20180411_2_7_Homework_WPF\obj\Debug\App.g.cs
+C:\Users\mmr\Documents\Visual Studio 2017\201801_Winter\20180411_2_7_Homework_WPF\20180411_2_7_Homework_WPF\obj\Debug\20180411_2_7_Homework_WPF_MarkupCompile.cache
+C:\Users\mmr\Documents\Visual Studio 2017\201801_Winter\20180411_2_7_Homework_WPF\20180411_2_7_Homework_WPF\obj\Debug\20180411_2_7_Homework_WPF_MarkupCompile.lref
+C:\Users\mmr\Documents\Visual Studio 2017\201801_Winter\20180411_2_7_Homework_WPF\20180411_2_7_Homework_WPF\bin\Debug\20180411_2_7_Homework_WPF.exe.config
+C:\Users\mmr\Documents\Visual Studio 2017\201801_Winter\20180411_2_7_Homework_WPF\20180411_2_7_Homework_WPF\bin\Debug\20180411_2_7_Homework_WPF.exe
+C:\Users\mmr\Documents\Visual Studio 2017\201801_Winter\20180411_2_7_Homework_WPF\20180411_2_7_Homework_WPF\bin\Debug\20180411_2_7_Homework_WPF.pdb
+C:\Users\mmr\Documents\Visual Studio 2017\201801_Winter\20180411_2_7_Homework_WPF\20180411_2_7_Homework_WPF\obj\Debug\MainWindow.baml
+C:\Users\mmr\Documents\Visual Studio 2017\201801_Winter\20180411_2_7_Homework_WPF\20180411_2_7_Homework_WPF\obj\Debug\20180411_2_7_Homework_WPF.g.resources
+C:\Users\mmr\Documents\Visual Studio 2017\201801_Winter\20180411_2_7_Homework_WPF\20180411_2_7_Homework_WPF\obj\Debug\_20180411_2_7_Homework_WPF.Properties.Resources.resources
+C:\Users\mmr\Documents\Visual Studio 2017\201801_Winter\20180411_2_7_Homework_WPF\20180411_2_7_Homework_WPF\obj\Debug\20180411_2_7_Homework_WPF.csproj.GenerateResource.cache
+C:\Users\mmr\Documents\Visual Studio 2017\201801_Winter\20180411_2_7_Homework_WPF\20180411_2_7_Homework_WPF\obj\Debug\20180411_2_7_Homework_WPF.csproj.CoreCompileInputs.cache
+C:\Users\mmr\Documents\Visual Studio 2017\201801_Winter\20180411_2_7_Homework_WPF\20180411_2_7_Homework_WPF\obj\Debug\20180411_2_7_Homework_WPF.exe
+C:\Users\mmr\Documents\Visual Studio 2017\201801_Winter\20180411_2_7_Homework_WPF\20180411_2_7_Homework_WPF\obj\Debug\20180411_2_7_Homework_WPF.pdb

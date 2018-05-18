@@ -1,0 +1,235 @@
+﻿<Window x:Class="_20180411_2_7_Homework_WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_20180411_2_7_Homework_WPF"
+        mc:Ignorable="d"
+        Title="The I Don't Care Cafe - Welcome" Height="650" Width="1000">
+    
+    <Grid Margin="10,10,10,10" 
+          Background="AliceBlue">
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height=".25*" />
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel
+            Grid.Column="0"
+            Grid.Row="0"
+            Grid.RowSpan="2"
+            Grid.ColumnSpan="4"
+            Orientation="Vertical"
+            HorizontalAlignment="Center">
+            <TextBlock 
+                TextAlignment="Center"
+                Foreground="Black">Welcome to
+            </TextBlock>
+            <TextBlock
+                TextAlignment="Center"
+                Foreground="Black">
+                The I Don't Care
+            </TextBlock>
+            <TextBlock
+                TextAlignment="Center"
+                Foreground="Black">
+                Cafe
+            </TextBlock>
+        </StackPanel>
+
+        <Button 
+            x:Name="resetButton" 
+            Content="Reset" 
+            Grid.Column="2" 
+            HorizontalAlignment="right" 
+            Margin="0,0,12,0" 
+            VerticalAlignment="Center" 
+            Width="75"
+            Click="resetButton_Click"/>
+
+        <StackPanel
+            Grid.Column="0"
+            Grid.Row="1"
+            Orientation="Vertical">
+            <Label
+                Padding="5">Would you prefer a -</Label>
+            <RadioButton 
+                GroupName="seatSelection"
+                Margin ="10,0,0,0"
+                Checked="seatSelection_Checked"
+                Name="boothRadioButton">Booth</RadioButton>
+            <RadioButton 
+                GroupName="seatSelection"
+                Margin="10,0,0,0"
+                Checked="seatSelection_Checked"
+                Name="tableRadioButton">Table</RadioButton>
+            <RadioButton 
+                GroupName="seatSelection"
+                Margin="10,0,0,0"
+                Checked="seatSelection_Checked"
+                Name="toGoRadioButton">This order is to go</RadioButton>
+
+            <Label
+                Padding="5">And you are having -</Label>
+            <RadioButton 
+                GroupName="diningSelection"
+                Margin ="10,0,0,0"
+                Checked="diningSelection_Checked"
+                Name="breakfastRadioButton">Breakfast</RadioButton>
+            <RadioButton 
+                GroupName="diningSelection"
+                Margin ="10,0,0,0"
+                Checked="diningSelection_Checked"
+                Name="lunchRadioButton">Lunch</RadioButton>
+            <RadioButton 
+                GroupName="diningSelection"
+                Margin ="10,0,0,0"
+                Checked="diningSelection_Checked"
+                Name="dinnerRadioButton">Dinner</RadioButton>
+        </StackPanel>
+
+        <StackPanel
+            Grid.Column="0"
+            Grid.Row="2"
+            Orientation="Vertical">
+            <TextBlock
+                Foreground="Black">
+                What Sounds Good?
+            </TextBlock>
+            <TextBlock
+                Name="dailySpecialTextblock">
+            </TextBlock>
+        </StackPanel>
+
+        <StackPanel
+            Grid.Column="1"
+            Grid.ColumnSpan="2"
+            Grid.Row="1"
+            Grid.RowSpan="2">
+            <TextBlock
+                Name="menuHeadingTextBlock">
+            </TextBlock>
+
+            <ListBox
+                SelectionMode="Multiple"   
+                SelectionChanged="menuListBox_SelectionChanged"
+                Name="menuListBox" Height="300" Margin="0,0,12,0">
+                <!--ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding itemName}" />
+                   </DataTemplate>
+            </-->
+            </ListBox>
+        </StackPanel>
+
+        <StackPanel
+            Grid.Column="1"
+            Grid.Row="3">
+            <!--TextBlock
+                Name="drinkHeadingTextBlock">
+            </-->
+
+            <ListBox
+                SelectionMode="Multiple"
+                SelectionChanged="drinkListBox_SelectionChanged"
+                Name="drinkListBox" Height="145">
+                <!--ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding itemName}" />
+                   </DataTemplate>
+            </-->
+            </ListBox>
+            <TextBlock
+                Name="ageRetrictionTextBlock" />
+        </StackPanel>
+
+        <StackPanel 
+            Grid.Column="0"
+            Grid.Row="3">
+            <StackPanel
+                Orientation="Horizontal">
+                <TextBlock>Today's Date -</TextBlock>
+                <TextBlock
+                    Name="todaysDateTextBlock"/>
+            </StackPanel>
+
+
+            <StackPanel
+                Name="birthdateStackPanel"
+                Visibility="Hidden">
+                <TextBlock>To purchase alcohol your birthday</TextBlock>
+                <StackPanel
+                    Orientation="Horizontal">
+                    <TextBlock> must be on or before -</TextBlock>
+                    <TextBlock
+                            Name="bornByDateTextBlock"/>
+                </StackPanel>
+
+                <StackPanel>
+                    <TextBlock
+                        Name="enterBirthdateTextBlock">Enter your birthdate MM/DD/YYYY -</TextBlock>
+                    <StackPanel
+                        Orientation="Horizontal">
+                        <TextBox
+                            Margin="12,0,0,0"
+                            Width="100"
+                            Name="inputBirthdateTextBox"/>
+                        <Button
+                            Name="inputBirthdateButton"
+                            Margin="12,0,0,0" 
+                            Content="Enter"
+                            Click="inputBirthdateButton_Click" />
+                    </StackPanel>
+                </StackPanel>
+            </StackPanel>
+
+            <StackPanel
+                Orientation="Horizontal">
+                <TextBlock
+                    Name="validationResponseTextBlock"/>
+            </StackPanel>
+
+        </StackPanel>
+
+        <StackPanel
+            Grid.Column="2"
+            Grid.Row="4"
+            Orientation="Vertical">
+            <TextBlock
+                Margin="12, 0,0,0"
+                Name="checkoutMealTextblock"/>
+            <TextBlock
+                Margin="20, 0,0,0"
+                Name="checkoutMealCostTextBlock"/>
+            <TextBlock
+                Margin="20, 0,0,0"
+                Name="checkoutMealTipTextBlock"/>
+            <TextBlock
+                Margin="20, 0,0,0"                
+                Name="checkoutMealTotalCostTextBlock"/>
+            <TextBlock/>
+            <TextBlock
+                Margin="12, 0,0,0"
+                Name="checkoutDrinkTextblock"/>
+            <TextBlock
+                Margin="20, 0,0,0"
+                Name="checkoutDrinkCostTextBlock"/>
+            <TextBlock
+                Margin="20, 0,0,0"
+                Name="checkoutDrinkTipTextBlock"/>
+            <TextBlock
+                Margin="20, 0,0,0"                
+                Name="checkoutDrinkTotalCostTextBlock"/>
+        </StackPanel>
+
+    </Grid>
+</Window>
